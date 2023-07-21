@@ -6,6 +6,8 @@ public class Libary : MonoBehaviour
 {
     
     
+    // Run 2 Function with given secs
+    // Libary.RunFuncWithSecs(givenFunc1,givenFunc2);
     public static float timer;
     public static bool moveDir;
     public delegate void SomeDelegate();        
