@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Libary : MonoBehaviour
+public class Library : MonoBehaviour
 {
     
     
     // Run 2 Function with given secs
-    // Libary.RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
+    // Library.RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
     public static float timer;
     public static bool moveDir;
     public delegate void SomeDelegate();        
@@ -19,7 +19,7 @@ public class Libary : MonoBehaviour
     ) 
     {
         timer += Time.deltaTime;
-        if(timer >= Secs) // Libary.RunWithSecs(func1,func2,second);
+        if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
         {
             timer = 0.0f;
             moveDir = !moveDir;
