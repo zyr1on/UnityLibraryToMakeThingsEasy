@@ -1,2 +1,2 @@
-# MyLibary
-C# Libary For Unity
+# MyLibrary
+C# library For Unity
