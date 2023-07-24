@@ -27,7 +27,7 @@ namespace Library
                 timer = 0.0f;
                 goFor = !goFor;
             }
-            if(moveDir) 
+            if(goFor) 
                 delegate1();
             else 
                 delegate2();
