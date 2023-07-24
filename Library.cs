@@ -33,7 +33,7 @@ namespace Library
                 delegate2();
         }
     }
-    public class Chipher
+    public class Encryption
     {
         private string hash = "test@test123!"; // Change Here;
         public string Encrypt(string input) 
