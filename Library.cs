@@ -35,7 +35,7 @@ namespace Library
     }
     public class Encryption //The Encryption Class encrypts and decrypts the string you pass the function
     {
-        private string hash = "test@test123!"; // Change Here;
+        private string hash = "JunkHash@foo"; // Change Here;
         public string Encrypt(string input) 
         {
             byte[] data = UTF8Encoding.UTF8.GetBytes(input);
