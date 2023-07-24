@@ -8,8 +8,8 @@ using Library;
 Library.className <myClass> = new Library.className();
 <myClass>.Attributes();
 ```
-Example <strong>Usage</strong> of Encryption Class;
-The Encryption Class encrypts and decrypts the string you pass the function
+Example <strong>Usage</strong> of Encryption Class; <br>
+The Encryption Class encrypts and decrypts the string you pass the function <br>
 (with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>)
 ```cs
 using Library;
