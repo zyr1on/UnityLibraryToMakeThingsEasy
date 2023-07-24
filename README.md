@@ -12,6 +12,9 @@ Example Usage of Encryption Class;
 ```cs
 using Library;
 Library.Encryption myChipher = new Library.Encryption();
+```
+and 
+```cs
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
 ```
