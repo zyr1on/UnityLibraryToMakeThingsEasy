@@ -22,7 +22,7 @@ namespace Library
             float Secs
         ) {
             timer += Time.deltaTime;
-            if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
+            if(timer >= Secs)
             {
                 timer = 0.0f;
                 goFor = !goFor;
