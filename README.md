@@ -9,7 +9,7 @@ Library.className <myClass> = new Library.className();
 Example Usage of Chipher Class;
 ```cs
 using Library;
-Library.Chipher myChipher = new Library.Chipher();
+Library.Encryption myChipher = new Library.Encryption();
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
 ```
