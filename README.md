@@ -13,4 +13,4 @@ Library.Chipher myChipher = new Library.Chipher();
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
 ```
-The Encryption Class encrypts or decrypts the string you supply (with given hash; Look at Code)
+The Encryption Class encrypts and decrypts the string you pass the function (with given hash; Look at Code)
