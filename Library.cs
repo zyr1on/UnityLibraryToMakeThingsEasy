@@ -8,8 +8,8 @@ namespace Library
 {
     public class Library : MonoBehaviour
     {
-        public static float timer;
-        public static bool moveDir;
+        public float timer;
+        public bool moveDir;
         public delegate void SomeDelegate();
         
         public void RunFuncWithSecs // Run 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
