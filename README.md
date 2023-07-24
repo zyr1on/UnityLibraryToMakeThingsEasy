@@ -13,7 +13,7 @@ Example <strong>Usage</strong> of Encryption Class;
 using Library;
 Library.Encryption myChipher = new Library.Encryption();
 ```
-and 
+<strong>And</srong>
 ```cs
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
