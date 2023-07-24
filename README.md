@@ -6,7 +6,7 @@ To Use:
 using Library;
 Library.className <myClass> = new Library.className();
 ```
-Example Usage of Chipher Class;
+Example Usage of Encryption Class;
 ```cs
 using Library;
 Library.Encryption myChipher = new Library.Encryption();
