@@ -16,8 +16,7 @@ namespace Library
         public delegate void SomeDelegate(); 
 
         // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec)
-        public void RunFuncWithSecs
-        (
+        public void RunFuncWithSecs (
             SomeDelegate delegate1,
             SomeDelegate delegate2, 
             float Secs
