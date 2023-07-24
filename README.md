@@ -8,7 +8,7 @@ using Library;
 Library.className <myClass> = new Library.className();
 <myClass>.Attributes();
 ```
-Example Usage of Encryption Class;
+Example <strong>Usage</strong> of Encryption Class;
 ```cs
 using Library;
 Library.Encryption myChipher = new Library.Encryption();
