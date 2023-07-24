@@ -18,4 +18,4 @@ and
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
 ```
-The Encryption Class encrypts and decrypts the string you pass the function (with given hash; Look at Code)
+The Encryption Class encrypts and decrypts the string you pass the function (with given hash; Line:38)
