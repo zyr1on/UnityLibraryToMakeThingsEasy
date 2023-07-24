@@ -9,10 +9,10 @@ using System.Security.Cryptography;
 using UnityEngine;
 namespace Library 
 {
-    public class Library : MonoBehaviour
+    public class LibraryFunctions
     {
         public float timer;
-        public bool moveDir;
+        public bool goFor;
         public delegate void SomeDelegate(); 
         public void RunFuncWithSecs // Run 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
         (
@@ -25,7 +25,7 @@ namespace Library
             if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
             {
                 timer = 0.0f;
-                moveDir = !moveDir;
+                goFor = !goFor;
             }
             if(moveDir) 
                 delegate1();
@@ -33,10 +33,9 @@ namespace Library
                 delegate2();
         }
     }
-    
-    public class Chipher // HelpForDecryptAndEncryptObjects;
+    public class Chipher
     {
-        private string hash = "123@!abc"; // BURASI DEĞİŞECEK;
+        private string hash = "test@test123!"; // Change Here;
         public string Encrypt(string input) 
         {
             byte[] data = UTF8Encoding.UTF8.GetBytes(input);
@@ -65,7 +64,5 @@ namespace Library
                 }
             }
         }
-
     }
-
 }
