@@ -14,13 +14,14 @@ namespace Library
         public float timer;
         public bool goFor;
         public delegate void SomeDelegate(); 
-        public void RunFuncWithSecs // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
+
+        // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec)
+        public void RunFuncWithSecs
         (
             SomeDelegate delegate1,
             SomeDelegate delegate2, 
             float Secs
-        ) 
-        {
+        ) {
             timer += Time.deltaTime;
             if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
             {
@@ -31,6 +32,13 @@ namespace Library
                 delegate1();
             else 
                 delegate2();
+        }
+        
+        // reset all transform values
+        public Void ResetAllTransform(this Transform trans) { 
+            trans.position = Vector3.zero; // (0,0,0)
+            trans.localRotation = Quaternion.identity;
+            trans.localScale = new Vector3(1,1,1);
         }
     }
     public class Encryption //The Encryption Class encrypts and decrypts the string you pass the function
