@@ -1,32 +1,34 @@
-using System.Collections;
-using System.Collections.Generic;
+/*
+using Library;
+Library.Library myLb = new Library.Library();
+myLb.Functions...
+*/
 using UnityEngine;
-
-public class Library : MonoBehaviour
+namespace Library 
 {
-    
-    
-    // Run 2 Function with given secs
-    // Library.RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
-    public static float timer;
-    public static bool moveDir;
-    public delegate void SomeDelegate();        
-    public static void RunFuncWithSecs
-    (
-        SomeDelegate delegate1,
-        SomeDelegate delegate2, 
-        float Secs
-    ) 
+    public class Library : MonoBehaviour
     {
-        timer += Time.deltaTime;
-        if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
+        public static float timer;
+        public static bool moveDir;
+        public delegate void SomeDelegate();
+        
+        public void RunFuncWithSecs // Run 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
+        (
+            SomeDelegate delegate1,
+            SomeDelegate delegate2, 
+            float Secs
+        ) 
         {
-            timer = 0.0f;
-            moveDir = !moveDir;
+            timer += Time.deltaTime;
+            if(timer >= Secs) // Library.RunWithSecs(func1,func2,second);
+            {
+                timer = 0.0f;
+                moveDir = !moveDir;
+            }
+            if(moveDir) 
+                delegate1();
+            else 
+                delegate2();
         }
-        if(moveDir) 
-            delegate1();
-        else 
-            delegate2();
     }
 }
