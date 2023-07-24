@@ -8,9 +8,7 @@ using Library;
 Library.className <myClass> = new Library.className();
 <myClass>.Attributes();
 ```
-Example <strong>Usage</strong> of Encryption Class; <br>
-The Encryption Class encrypts and decrypts the string you pass the function <br>
-(with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>)
+Example <strong>Usage</strong> of Encryption Class;
 ```cs
 using Library;
 Library.Encryption myChipher = new Library.Encryption();
@@ -20,3 +18,5 @@ and
 myChipher.Encrypt("Hi");
 myChipher.Decrypt();
 ```
+The Encryption Class encrypts and decrypts the string you pass the function
+(with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>)
