@@ -14,7 +14,7 @@ namespace Library
         public float timer;
         public bool goFor;
         public delegate void SomeDelegate(); 
-        public void RunFuncWithSecs // Run 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
+        public void RunFuncWithSecs // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec);
         (
             SomeDelegate delegate1,
             SomeDelegate delegate2, 
@@ -33,7 +33,7 @@ namespace Library
                 delegate2();
         }
     }
-    public class Encryption
+    public class Encryption //The Encryption Class encrypts and decrypts the string you pass the function
     {
         private string hash = "test@test123!"; // Change Here;
         public string Encrypt(string input) 
