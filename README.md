@@ -16,7 +16,7 @@ Library.Encryption myChipher = new Library.Encryption();
 <strong>And</strong>
 ```cs
 myChipher.Encrypt("Hi");           // Encrypts "Hi"
-myChipher.Decrypt(encrypted.data); // Decrypt encrypted.data(string value)
+myChipher.Decrypt(encrypted.data); // Decrypt encrypted.data (string)
 ```
 The Encryption Class encrypts and decrypts the string you pass the function
 (with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>)
