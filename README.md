@@ -41,13 +41,13 @@ public class example : MonoBehaviour
 {
     void Start()
     {
-        LibraryFunctions.RunFuncWithSecs(func1,func2,2); // runs func1 after 2 secons runs func2 for once(cuz start function);
+        LibraryFunctions.RunFuncWithSecs(func1,func2,3); // first func1 runs and after 3 seconds func2 runs for once(cuz start method);
     }
 
     void Update()
     {
-        // first func1 runs and after 2 seconds func2 runs and this goes on and on(cuz update function)
-        LibraryFunctions.RunFuncWithSecs(func1,func2,2);
+        // first func1 runs and after 5 seconds func2 runs and this goes on and on(cuz update method)
+        LibraryFunctions.RunFuncWithSecs(func1,func2,5);
     }
 }
 ```
