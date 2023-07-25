@@ -1,7 +1,6 @@
 /*
 using Library;
-Library.className <myClass> = new Library.className();
-<myClass>.Attributes();
+Library.attributes()
 */
 using System;
 using System.Text;
