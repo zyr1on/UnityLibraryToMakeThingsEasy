@@ -2,7 +2,7 @@
 My C# library For Unity 
 <br>
 
-<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L39">Line:39</a>
+<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>
 ```cs
 using UnityEngine;
 using Library;
