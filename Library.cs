@@ -39,7 +39,7 @@ namespace Library
             trans.localScale = new Vector3(1,1,1);
         }
     }
-    public static class Encryption //The Encryption Class encrypts and decrypts the string you pass the function
+    public static class Encryption //The Encryption Class encrypts and decrypts the string you pass the function md5,tripleDes
     {
         private static string hash = "JunkHash@foo"; // Change Here;
         public static string Encrypt(string input) 
