@@ -14,22 +14,19 @@ namespace Library
         public delegate void SomeDelegate(); 
 
         // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec)
-        public static void RunFuncWithSecs (
-            SomeDelegate delegate1,
-            SomeDelegate delegate2, 
-            float Secs
-        ) {
+        public static void RunFuncWithSecs (SomeDelegate delegate1,SomeDelegate delegate2, float Secs) {
             timer += Time.deltaTime;
-            if(timer >= Secs)
-            {
+            if(timer >= Secs) {
                 timer = 0.0f;
                 goFor = !goFor;
             }
+
             if(goFor) 
                 delegate1();
             else 
                 delegate2();
         }
+        
         // reset all transform values
         public static void ResetAllTransform(this Transform trans) { 
             trans.position = Vector3.zero; // (0,0,0)
@@ -37,9 +34,9 @@ namespace Library
             trans.localScale = new Vector3(1,1,1);
         }
     }
+    
     //The Encryption Class encrypts and decrypts the string you pass the function (MD5,TripleDES,base64)
-    public static class Encryption {
-        
+    public static class Encryption {    
         private static string hash = "JunkHash@foo"; // Change Here;
         
         public static string Encrypt(string input) {
