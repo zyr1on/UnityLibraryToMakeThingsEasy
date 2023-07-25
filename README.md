@@ -24,4 +24,4 @@ public class Example : MonoBehaviour
 }
 ```
 The Encryption Class encrypts and decrypts the string you pass the function
-(with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L45">Line:45</a>)
+(with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L44">Line:44</a>)
