@@ -17,7 +17,7 @@ public class Example : MonoBehaviour
 ```
 !!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L40">Line:40</a>)
-
+<br>
 <strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L33">Line:33</a>) 
 ```cs
 using UnityEngine;
@@ -32,7 +32,7 @@ public class Example : MonoBehaviour
     }
 }
 ```
-
+<br>
 <strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L16">Line:16</a>) 
 ```cs
 using UnityEngine;
