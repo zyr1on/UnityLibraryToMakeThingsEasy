@@ -8,8 +8,7 @@ using System.Security.Cryptography;
 using UnityEngine;
 namespace Library 
 {
-    public static class LibraryFunctions
-    {
+    public static class LibraryFunctions {
         static float timer;
         static bool goFor;
         public delegate void SomeDelegate(); 
@@ -39,11 +38,11 @@ namespace Library
         }
     }
     //The Encryption Class encrypts and decrypts the string you pass the function (MD5,TripleDES,base64)
-    public static class Encryption 
-    {
+    public static class Encryption {
+        
         private static string hash = "JunkHash@foo"; // Change Here;
-        public static string Encrypt(string input) 
-        {
+        
+        public static string Encrypt(string input) {
             byte[] data = UTF8Encoding.UTF8.GetBytes(input);
             using(MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider()) 
             {
@@ -56,8 +55,7 @@ namespace Library
                 }
             }
         }
-        public static string Decrypt(string input) 
-        {
+        public static string Decrypt(string input) {
             byte[] data = Convert.FromBase64String(input);
             using(MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider()) 
             {
