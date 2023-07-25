@@ -10,9 +10,8 @@ public class Example : MonoBehaviour
 {
     void Start() 
     {
-        string encrypted_data = Encryption.Encrypt("Hi");
-        Debug.Log(encrypted_data);
-        string decrypted_data = Encryption.Decrypt(encrypted_data);
+        string encrypted_data = Encryption.Encrypt("Hi"); // encrypts "hi" string;
+        string decrypted_data = Encryption.Decrypt(encrypted_data); // Decrypts "encrypted_data" variable encrypted as "hi"
     }
 }
 ```
