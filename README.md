@@ -32,3 +32,25 @@ public class Example : MonoBehaviour
     }
 }
 ```
+
+<strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L18">Line:18</a>) 
+```cs
+using UnityEngine;
+using Library;
+public class example : MonoBehaviour
+{
+    void Start()
+    {
+        LibraryFunctions.RunFuncWithSecs(func1,func2,2); // runs func1 after 2 secons runs func2;
+    }
+
+    void Update()
+    {
+        // first func1 runs and after 2 seconds func2 runs and this goes on and on(cuz update function)
+        LibraryFunctions.RunFuncWithSecs(func1,func2,2);
+    }
+}
+```
+
+
+
