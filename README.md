@@ -35,6 +35,8 @@ public class Example : MonoBehaviour
     void Start() 
     {
         transform.ResetAllTransform(); // reset all transform values
+        // or
+        LibraryFunctions.ResetAllTransform(this.transform); // 
     }
 }
 ```
