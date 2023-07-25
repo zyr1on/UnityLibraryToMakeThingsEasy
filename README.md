@@ -5,12 +5,14 @@ To Use:
 
 ```cs
 using Library;
+
 Library.className <myClass> = new Library.className();
 <myClass>.Attributes();
 ```
 Example <strong>Usage</strong> of Encryption Class;
 ```cs
 using Library;
+
 Library.Encryption myChipher = new Library.Encryption();
 ```
 <strong>And</strong>
