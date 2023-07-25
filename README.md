@@ -1,14 +1,7 @@
 # MyLibrary
 My C# library For Unity 
 <br>
-To Use:
 
-```cs
-using Library;
-
-Library.className <myClass> = new Library.className();
-<myClass>.Attributes();
-```
 <strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L42">Line:42</a>
 ```cs
 using UnityEngine;
