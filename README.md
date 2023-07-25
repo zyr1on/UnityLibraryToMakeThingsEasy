@@ -2,7 +2,7 @@
 My C# library For Unity 
 <br>
 
-<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L42">Line:42</a>
+<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L40">Line:40</a>
 ```cs
 using UnityEngine;
 using Library;
@@ -18,7 +18,7 @@ public class Example : MonoBehaviour
 !!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L45">Line:45</a>)
 
-<strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L35">Line:35</a>) 
+<strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L33">Line:33</a>) 
 ```cs
 using UnityEngine;
 using Library;
@@ -33,7 +33,7 @@ public class Example : MonoBehaviour
 }
 ```
 
-<strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L18">Line:18</a>) 
+<strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L16">Line:16</a>) 
 ```cs
 using UnityEngine;
 using Library;
