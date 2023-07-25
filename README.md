@@ -15,7 +15,7 @@ public class Example : MonoBehaviour
     }
 }
 ```
-The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
+!!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L45">Line:45</a>)
 
 <strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L36">Line:36</a>) 
