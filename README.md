@@ -9,7 +9,7 @@ using Library;
 Library.className <myClass> = new Library.className();
 <myClass>.Attributes();
 ```
-Example <strong>Usage</strong> of Encryption Class;
+<strong> Example Usage of Encryption Class; </strong>
 ```cs
 using UnityEngine;
 using Library;
@@ -26,7 +26,7 @@ public class Example : MonoBehaviour
 The Encryption Class encrypts and decrypts the string you pass the function
 (with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L44">Line:44</a>)
 
-Example <strong>Usage</strong> of  ResetAllTransform Function (<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L36">Line:36</a>)
+<strong>Example <strong>Usage</strong> of  ResetAllTransform Function </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L36">Line:36</a>) 
 ```cs
 using UnityEngine;
 using Library;
