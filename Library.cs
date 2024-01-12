@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Library 
 {
     public static class LibraryFunctions {
-        static float timer;
+        static float timer = 0;
         static bool goFor;
         public delegate void SomeDelegate(); 
 
@@ -20,11 +20,18 @@ namespace Library
                 timer = 0.0f;
                 goFor = !goFor;
             }
-
             if(goFor) 
                 delegate1();
             else 
                 delegate2();
+        }
+
+        // Runs Function with given secs,Run(givenFunc1,givenSec);
+        public static void Run(SomeDelegate delegate,float secs) {
+            timer += Time.deltaTime;
+            if(timer >= secs) {
+                delegate();
+            }
         }
         
         //define screen bounds
