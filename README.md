@@ -17,22 +17,7 @@ public class Example : MonoBehaviour
 ```
 !!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L6">Line:6</a>)
-<br>
 
-<strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L33">Line:33</a>) 
-```cs
-using UnityEngine;
-using Library;
-public class Example : MonoBehaviour
-{
-    void Start() 
-    {
-        transform.ResetAllTransform(); // reset all transform values
-        // or
-        LibraryFunctions.ResetAllTransform(this.transform);
-    }
-}
-```
 <br>
 <strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/TimeUtils.cs#L7">Line:7</a>) 
 
