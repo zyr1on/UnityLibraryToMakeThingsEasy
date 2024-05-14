@@ -37,3 +37,27 @@ public class example : MonoBehaviour
     }
 }
 ```
+
+<br>
+<strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/ScreenBounds.cs#L4">Line:4</a>) 
+
+```cs
+using UnityEngine;
+using Library;
+public class example : MonoBehaviour
+{
+    ScreenBounds bounds;
+    void Start()
+    {
+        bounds = ScreenBounds.GetScreenBounds();
+        Debug.Log(bounds.min.x);
+    }
+    void Update()
+    {
+        if(transform.position.y < bounds.min.y) {
+            // DO THINGS
+        }
+    }
+}
+```
+
