@@ -34,11 +34,6 @@ namespace Library
             }
         }
         
-        //define screen bounds
-        public static Vector2 screenBounds() {
-            Vector2 bounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width,Screen.height,Camera.main.transform.position.z));
-            return bounds; //
-        }
         
         // reset all transform values
         public static void ResetAllTransform(this Transform trans) { 
