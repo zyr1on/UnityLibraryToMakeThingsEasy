@@ -1,11 +1,13 @@
+//ScreenBounds bounds = ScreenBounds.GetScreenBounds();
+// bounds.min.x bounds.max.x bounds.min.y bounds.max.y
 using UnityEngine;
 public struct ScreenBounds {
-    public Vector2 Min { get; set; }
-    public Vector2 Max { get; set; }
+    public Vector2 min { get; set; }
+    public Vector2 max { get; set; }
     public ScreenBounds(Vector2 min, Vector2 max)
     {
-        Min = min;
-        Max = max;
+        this.min = min;
+        this.max = max;
     }
     public static ScreenBounds GetScreenBounds()
     {
