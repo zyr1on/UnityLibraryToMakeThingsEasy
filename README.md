@@ -2,7 +2,7 @@
 My C# library For Unity 
 <br>
 
-<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L38">Line:38</a>
+<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L5">Line:5</a>
 ```cs
 using UnityEngine;
 using Library;
@@ -16,7 +16,7 @@ public class Example : MonoBehaviour
 }
 ```
 !!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
-with given hash; <a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L40">Line:40</a>)
+with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L6">Line:6</a>)
 <br>
 <strong>Example <strong>Usage</strong> of  ResetAllTransform Function: </strong>(<a href="https://github.com/zyr1on/MyLibary/blob/main/Library.cs#L33">Line:33</a>) 
 ```cs
