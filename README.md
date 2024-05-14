@@ -5,7 +5,6 @@ My C# library For Unity
 <strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L5">Line:5</a>
 ```cs
 using UnityEngine;
-using Library;
 public class Example : MonoBehaviour
 {
     void Start() 
@@ -23,7 +22,6 @@ with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encr
 
 ```cs
 using UnityEngine;
-using Library;
 public class example : MonoBehaviour
 {
     void Start()
@@ -43,7 +41,6 @@ public class example : MonoBehaviour
 
 ```cs
 using UnityEngine;
-using Library;
 public class example : MonoBehaviour
 {
     ScreenBounds bounds;
