@@ -7,10 +7,16 @@ My C# library For Unity
 using UnityEngine;
 public class Example : MonoBehaviour
 {
-    void Start() 
+    void Start()
     {
-        string encrypted_data = Encryption.Encrypt("Hi"); // encrypts "hi" string;
-        string decrypted_data = Encryption.Decrypt(encrypted_data); // Decrypts "encrypted_data" variable encrypted as "hi"
+        string encrypted_data;
+        string decrypted_data;
+
+        encrypted_data = EncryptionHelper.EncryptMD5DES("Hi");
+        decrypted_data = EncryptionHelper.DecryptMD5DES(encrypted_data);
+
+        encrypted_data = EncryptionHelper.EncryptSHA256("Hi");
+        decrypted_data = EncryptionHelper.DecryptSHA256(encrypted_data);
     }
 }
 ```
