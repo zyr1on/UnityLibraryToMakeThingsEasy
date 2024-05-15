@@ -38,7 +38,7 @@ public class example : MonoBehaviour
     {
         // after 5 secs func1 runs and after 5 seconds func2 runs and this goes on and on(cuz update method)
         TimeUtils.RunFuncsWithSecs(func1,func2,5);
-        TimeUtils.RunFuncWithSecs(other_func,5); after 5 secs other_func runs and after 5 secs func1 runs and this goes on and on;
+        TimeUtils.RunFuncWithSecs(other_func,5); //after 5 secs other_func runs and after 5 secs func1 runs and this goes on and on;
     }
 }
 ```
