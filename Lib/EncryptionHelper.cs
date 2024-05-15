@@ -23,8 +23,6 @@ public static class EncryptionHelper
                 using (ICryptoTransform encryptor = tripDes.CreateEncryptor())
                 {
                     byte[] results = encryptor.TransformFinalBlock(data, 0, data.Length);
-
-                    // Prepend IV for use in decryption
                     byte[] combinedResults = new byte[iv.Length + results.Length];
                     Array.Copy(iv, 0, combinedResults, 0, iv.Length);
                     Array.Copy(results, 0, combinedResults, iv.Length, results.Length);
