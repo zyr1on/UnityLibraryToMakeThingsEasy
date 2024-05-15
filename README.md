@@ -20,7 +20,7 @@ public class Example : MonoBehaviour
     }
 }
 ```
-!!! The provided code snippet uses the MD5 and TripleDES (3DES) and SHA256 algorithms for the encryption process. <br>The EncryptionHelper Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
+!!! The provided code snippet uses the MD5 with TripleDES (3DES) and SHA256 algorithms for the encryption process. <br>The EncryptionHelper Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/EncryptionHelper.cs#L7">Line:7</a>)
 
 <br>
