@@ -14,7 +14,7 @@ public class Example : MonoBehaviour
     }
 }
 ```
-!!! The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
+!!! The provided code snippet uses the MD5 and TripleDES (3DES) algorithms for the encryption process. <br>The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
 with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L6">Line:6</a>)
 
 <br>
