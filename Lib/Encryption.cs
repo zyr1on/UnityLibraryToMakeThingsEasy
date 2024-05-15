@@ -3,7 +3,7 @@ using System;
 using System.Text;
 
 public static class Encryption {    
-    private static string hash = "JunkHash@foo"; // Change Here;
+    private static string hash = "your-secure-key-here"; // Change Here;
     public static string Encrypt(string input) {
         byte[] data = UTF8Encoding.UTF8.GetBytes(input);
         using(MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider()) 
