@@ -14,7 +14,7 @@ public class Example : MonoBehaviour
 
         encrypted_data = EncryptionHelper.EncryptMD5DES("Hi");
         decrypted_data = EncryptionHelper.DecryptMD5DES(encrypted_data);
-
+        // SHA256 more secure!
         encrypted_data = EncryptionHelper.EncryptSHA256("Hi");
         decrypted_data = EncryptionHelper.DecryptSHA256(encrypted_data);
     }
