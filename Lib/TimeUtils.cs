@@ -6,16 +6,11 @@ public static class TimeUtils {
     // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec)
     public static void RunFuncsWithSecs(SomeDelegate delegate1, SomeDelegate delegate2, float Secs)
     {
-        // after "secs" seconds delegate1 runs and after "secs" seconds delegate2 runs.
         timer += Time.deltaTime;
         if(timer >= Secs) {
             timer = 0.0f;
-            if(goFor) {
-                delegate1();
-            }
-            else {
-                delegate2();
-            }
+            if(goFor) delegate1();
+            else delegate2();
             goFor = !goFor;
         }
     }
@@ -23,9 +18,9 @@ public static class TimeUtils {
     public static void RunFuncWithSecs(SomeDelegate someDelegate,float secs)
     {
         timer += Time.deltaTime;
-        if(timer > secs) {
+        if(timer >= secs) {
             someDelegate();
-            timer = 0;
+            timer = 0.0f;
         }
     }
 }
