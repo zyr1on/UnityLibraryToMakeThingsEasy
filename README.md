@@ -24,28 +24,6 @@ public class Example : MonoBehaviour
 with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/EncryptionHelper.cs#L7">Line:7</a>)
 
 <br>
-<strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/TimeUtils.cs#L7">Line:7</a>) 
-
-```cs
-using UnityEngine;
-public class example : MonoBehaviour
-{
-    void Start()
-    {
-        TimeUtils.RunFuncsWithSecs(func1,func2,3); // after 3 seconds func1 runs and after 3 seconds func2 runs for once(cuz start method);
-    }
-    void Update()
-    {
-        TimeUtils.RunFuncsWithSecs(func1,func2,3); // After 3 seconds func1 runs, 3 seconds after that func2 runs and so on
-//      TimeUtils.RunFuncsWithSecs(func1,func2,3,TimeUtils.CallType.Unimmediate);
-
-        TimeUtils.RunFuncsWithSecs(func1,func2,3,TimeUtils.CallType.Immediate); // first func1 runs, 3 seconds after that func2 runs and so on;
-        
-    }
-}
-```
-
-<br>
 <strong>Example <strong>Usage</strong> of ScreenBounds struct </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/ScreenBounds.cs#L4">Line:4</a>) 
 
 ```cs
