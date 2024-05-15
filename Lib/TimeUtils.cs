@@ -4,7 +4,7 @@ public static class TimeUtils {
     static bool goFor;
     public delegate void SomeDelegate(); 
     // Runs 2 Function with given secs,RunFuncWithSecs(givenFunc1,givenFunc2,givenSec)
-    public static void RunFuncWithSecs(SomeDelegate delegate1, SomeDelegate delegate2, float Secs)
+    public static void RunFuncsWithSecs(SomeDelegate delegate1, SomeDelegate delegate2, float Secs)
     {
         timer += Time.deltaTime;
         if (timer >= Secs)
@@ -18,7 +18,7 @@ public static class TimeUtils {
             delegate2();
     }
 
-    public static void RunFunc(SomeDelegate someDelegate,float secs)
+    public static void RunFuncWithSecs(SomeDelegate someDelegate,float secs)
     {
         timer += Time.deltaTime;
         if(timer > secs) {
