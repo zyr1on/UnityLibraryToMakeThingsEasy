@@ -2,7 +2,7 @@
 My C# library For Unity 
 <br>
 
-<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L5">Line:5</a>
+<strong> Example Usage of Encryption Class: </strong> <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/EncryptionHelper.cs#L5">Line:5</a>
 ```cs
 using UnityEngine;
 public class Example : MonoBehaviour
@@ -20,8 +20,8 @@ public class Example : MonoBehaviour
     }
 }
 ```
-!!! The provided code snippet uses the MD5 and TripleDES (3DES) algorithms for the encryption process. <br>The Encryption Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
-with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encryption.cs#L6">Line:6</a>)
+!!! The provided code snippet uses the MD5 and TripleDES (3DES) and SHA256 algorithms for the encryption process. <br>The EncryptionHelper Class encrypts and decrypts the string you pass the function (md5,tripleDES,base64 -> 
+with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/EncryptionHelper.cs#L7">Line:7</a>)
 
 <br>
 <strong>Example <strong>Usage</strong> of  RunFuncWithSecs Function: </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/TimeUtils.cs#L7">Line:7</a>) 
