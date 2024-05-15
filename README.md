@@ -32,11 +32,11 @@ public class example : MonoBehaviour
 {
     void Start()
     {
-        TimeUtils .RunFuncWithSecs(func1,func2,3); // first func1 runs and after 3 seconds func2 runs for once(cuz start method);
+        TimeUtils .RunFuncWithSecs(func1,func2,3); // after 3 seconds func1 runs and after 3 seconds func2 runs for once(cuz start method);
     }
     void Update()
     {
-        // first func1 runs and after 5 seconds func2 runs and this goes on and on(cuz update method)
+        // after 5 secs func1 runs and after 5 seconds func2 runs and this goes on and on(cuz update method)
         TimeUtils .RunFuncWithSecs(func1,func2,5);
     }
 }
