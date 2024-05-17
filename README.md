@@ -30,7 +30,7 @@ with given hash; <a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/Encr
 using UnityEngine;
 public class example : MonoBehaviour
 {
-    ScreenBounds bounds;
+    ScreenBounds bounds; // defined here!!
     void Start()
     {
         bounds = ScreenBounds.GetScreenBounds();
