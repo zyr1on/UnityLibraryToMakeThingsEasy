@@ -41,6 +41,8 @@ public class example : MonoBehaviour
         if(transform.position.y > bounds.min.y) { // its more like if the y coordinate of the gameObject(this) exceeds the limit
             // DO THINGS
         }
+        // Or you can use Like this
+        Mathf.Clamp(transform.position.x,bounds.min.x,bounds.max.x);
     }
 }
 ```
