@@ -45,3 +45,21 @@ public class example : MonoBehaviour
 }
 ```
 
+<br>
+<strong>Example <strong>Usage</strong> of FileUtilities </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/ScreenBounds.cs#L4">Line:4</a>) 
+
+```cs
+    void Start()
+    {
+        DataType myData = new DataType();
+        FileUtilities.WriteAsJson(myData,contents); // The file was saved as json as obj type with given contents.
+        DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
+        // It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
+        // So, our new otherData changes to readed values from ReadAsJson.
+
+        
+
+
+    }
+```
+
