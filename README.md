@@ -53,13 +53,10 @@ public class example : MonoBehaviour
     {
         DataType myData = new DataType();
         FileUtilities.WriteAsJson(myData,contents); // The file was saved as json as obj type with given contents.
+        // you can save as string
         DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
         // It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
         // So, our new otherData changes to readed values from ReadAsJson.
-
-        
-
-
     }
 ```
 
