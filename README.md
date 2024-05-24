@@ -36,7 +36,7 @@ public class example : MonoBehaviour
         bounds = ScreenBounds.GetScreenBounds();
         Debug.Log(bounds.min.x);
     }
-    void Update()
+    void Update() //or FixedUpdate() depends on you
     {
         if(transform.position.y > bounds.max.y || transform.position.y < bounds.min.y) { // its more like if the y coordinate of the gameObject(this) exceeds the limit
             // DO THINGS
