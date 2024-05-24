@@ -46,12 +46,12 @@ public class example : MonoBehaviour
 ```
 
 <br>
-<strong>Example <strong>Usage</strong> of FileUtilities </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/ScreenBounds.cs#L4">Line:4</a>) 
+<strong>Example <strong>Usage</strong> of FileUtilities </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/FileUtilities.cs#L4">Line:4</a>) 
 
 ```cs
     void Start()
     {
-        DataType myData = new DataType();
+        DataType myData = new DataType(); // or it can be anything like struct, enum, string...
         FileUtilities.WriteAsJson(myData,contents); // The file was saved as json as obj type with given contents.
         // you can save as string
         DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
