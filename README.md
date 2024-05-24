@@ -38,7 +38,7 @@ public class example : MonoBehaviour
     }
     void Update()
     {
-        if(transform.position.y > bounds.min.y) { // its more like if the y coordinate of the gameObject(this) exceeds the limit
+        if(transform.position.y > bounds.max.y || transform.position.y < bounds.min.y) { // its more like if the y coordinate of the gameObject(this) exceeds the limit
             // DO THINGS
         }
         // Or you can use Like this
