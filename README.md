@@ -54,7 +54,7 @@ public class example : MonoBehaviour
     void Start()
     {
         DataType myData = new DataType(); // or it can be anything like struct, enum, string...
-        FileUtilities.WriteAsJson(myData,contents); // The file was saved as json as obj type with given contents.
+        FileUtilities.WriteAsJson(myData,path); // The file was saved to given path as json as obj type.
         // you can save as string
         DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
         // It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
