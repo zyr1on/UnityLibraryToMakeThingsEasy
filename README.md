@@ -57,8 +57,11 @@ public class example : MonoBehaviour
         FileUtilities.WriteAsJson(myData,path); // The file was saved to given path as json as obj type.
         // you can save as string
         DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
-        // It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
-        // So, our new otherData changes to readed values from ReadAsJson.
+        /* It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
+        / So, our new otherData changes to readed values from ReadAsJson.
+        / And that way we can create a simple save system with json.
+        / Save()->WriteAsJson Load()->ReadAsJson<datatype>(); (lets assume datatype is a collection of variableas of our game datas).
+        */
     }
 ```
 
