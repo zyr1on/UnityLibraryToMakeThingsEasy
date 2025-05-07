@@ -74,13 +74,13 @@ DataType myData = new DataType();
 public GameObject Player;
 ...................
 void Save() { // onQuit,onFocus etc.
-	myData.position = Player.transform.position;
-	FileUtilities.WriteAsJson(myData,path);
+    myData.position = Player.transform.position;
+    FileUtilities.WriteAsJson(myData,path);
 }
 ...................
 void Load() {
-	DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
-	Player.transform.position = otherData.position;
+    DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
+    Player.transform.position = otherData.position;
 }   
 
 ```
