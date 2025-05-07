@@ -56,12 +56,29 @@ public class example : MonoBehaviour
         DataType myData = new DataType(); // or it can be anything like struct, enum, string...
         FileUtilities.WriteAsJson(myData,path); // The file was saved to given path as json as obj type.
         // you can save as string
-        DataType otherData = FileUtilities.ReadAsJson<Data>(DataType);
+        DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
         /* It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
         / So, our new otherData changes to readed values from ReadAsJson.
         / And that way we can create a simple save system with json.
         / Save()->WriteAsJson Load()->ReadAsJson<datatype>(); (lets assume datatype is a collection of variableas of our game datas).
         */
+        Saving contents...
+		struct myData {
+			Vector3 position;
+		};
+		...
+		DataType myData = new DataType();
+		public GameObject Player;
+		...
+		void Save() { // onQuit,onFocus etc.
+			myData.position = Player.transform.position;
+			FileUtilities.WriteAsJson(myData,path);
+        }
+     	...
+		void Load() {
+			DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
+			Player.transform.position = otherData.position;
+		}   
     }
 ```
 
