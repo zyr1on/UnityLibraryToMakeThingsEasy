@@ -51,17 +51,17 @@ public class example : MonoBehaviour
 <strong>Example <strong>Usage</strong> of FileUtilities </strong>(<a href="https://github.com/zyr1on/MyLibrary/blob/main/Lib/FileUtilities.cs#L4">Line:4</a>) 
 
 ```cs
-    void Start()
-    {
-        DataType myData = new DataType(); // or it can be anything like struct, enum, string...
-        FileUtilities.WriteAsJson(myData,path); // The file was saved to given path as json as obj type.
-        // you can save as string
-        DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
-        /* It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
-        / So, our new otherData changes to readed values from ReadAsJson.
-        / And that way we can create a simple save system with json.
-        / Save()->WriteAsJson Load()->ReadAsJson<datatype>(); (lets assume datatype is a collection of variableas of our game datas).
-        */
+void Start()
+{
+	DataType myData = new DataType(); // or it can be anything like struct, enum, string...
+	FileUtilities.WriteAsJson(myData,path); // The file was saved to given path as json as obj type.
+	// you can save as string
+	DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
+	/* It reads the contents from file with given path variable and then assigns it to the other "otherData variable" with its own type.
+	/ So, our new otherData changes to readed values from ReadAsJson.
+	/ And that way we can create a simple save system with json.
+	/ Save()->WriteAsJson Load()->ReadAsJson<datatype>(); (lets assume datatype is a collection of variableas of our game datas).
+	*/
 }
 
 # Saving contents...
