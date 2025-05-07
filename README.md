@@ -67,7 +67,7 @@ void Start()
 # Saving contents...
 
 struct myData {
-	Vector3 position;
+    Vector3 position;
 };
 ...................
 DataType myData = new DataType();
