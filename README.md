@@ -62,23 +62,26 @@ public class example : MonoBehaviour
         / And that way we can create a simple save system with json.
         / Save()->WriteAsJson Load()->ReadAsJson<datatype>(); (lets assume datatype is a collection of variableas of our game datas).
         */
-        Saving contents...
-		struct myData {
-			Vector3 position;
-		};
-		...
-		DataType myData = new DataType();
-		public GameObject Player;
-		...
-		void Save() { // onQuit,onFocus etc.
-			myData.position = Player.transform.position;
-			FileUtilities.WriteAsJson(myData,path);
-        }
-     	...
-		void Load() {
-			DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
-			Player.transform.position = otherData.position;
-		}   
-    }
+}
+
+# Saving contents...
+
+struct myData {
+	Vector3 position;
+};
+...................
+DataType myData = new DataType();
+public GameObject Player;
+...................
+void Save() { // onQuit,onFocus etc.
+	myData.position = Player.transform.position;
+	FileUtilities.WriteAsJson(myData,path);
+}
+...................
+void Load() {
+	DataType otherData = FileUtilities.ReadAsJson<Data>(PathOfDataTypeJson);
+	Player.transform.position = otherData.position;
+}   
+
 ```
 
